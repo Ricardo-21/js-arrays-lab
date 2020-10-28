@@ -33,8 +33,20 @@ function abbrevName(name) {
 }
 
 // Question 5
-function makeTitle() {
+function makeTitle(str) {
   // Write your code here
+  let firstLet = str.split(" ").map(x => {
+    let d = x[0].toUpperCase();
+    
+    let r = x.split("");
+    r.shift();
+    r = r.join("");
+    return d + r;
+    
+  }
+    ).join(" ");
+  return firstLet;
+  
 }
 
 // Question 6
