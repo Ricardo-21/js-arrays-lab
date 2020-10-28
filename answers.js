@@ -15,8 +15,15 @@ function combineArrays(arr, arr2) {
 }
 
 // Question 3
-function arrayPlusArray() {
+function arrayPlusArray(arr, arr2) {
   // Write your code here
+  let bigArr = combineArrays(arr, arr2);
+  console.log(bigArr);
+  const reduce = bigArr.reduce((x, elem) => {
+	x += elem;
+	return x;
+  })
+  return reduce;
 }
 
 // Question 4
