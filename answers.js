@@ -59,7 +59,7 @@ function gimme(arr) {
     min = x<min? x:min;
   });
   let result;
-  let loop = arr.map(x=>(x==max || x==min)?"":result =x);
+  let loop = arr.map(x=>(x==max || x==min)?"":result =arr.indexOf(x));
   return result;
 }
 
