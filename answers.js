@@ -1,6 +1,11 @@
 // Question 1
-function average() {
+function average(arr) {
   // Write your code here
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++){
+    sum += arr[i];
+  }
+  return sum/arr.length;
 }
 
 // Question 2
