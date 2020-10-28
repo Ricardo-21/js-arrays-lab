@@ -63,6 +63,19 @@ function gimme(arr) {
   return result;
 }
 
+function arrayDiff (arr,arr2){
+  let big = [];
+  for(let i = 0; i < arr.length; i++){
+    for (let j = 0; j < arr2.length; j++){
+      if (!(arr[i] === arr2[j])) {
+        big.push(arr[i]);
+      }
+    }
+  }
+  return big;
+  
+}
+
 // Do NOT touch or write anything below this line
 module.exports = {
   average,
