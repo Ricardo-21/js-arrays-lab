@@ -27,8 +27,9 @@ function arrayPlusArray(arr, arr2) {
 }
 
 // Question 4
-function abbrevName() {
+function abbrevName(name) {
   //Write your code here
+  return name.split(" ").map(x => x[0]).join(".");
 }
 
 // Question 5
