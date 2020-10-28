@@ -76,6 +76,21 @@ function arrayDiff (arr,arr2){
   
 }
 
+function findMissingLength(arr){
+  let lengths = [];
+  let result;
+  let fill = arr.map(x=>{
+    lengths.push(x.length)
+    return false;
+  });
+  lengths.sort((a,b)=>a-b);
+  let solve = lengths.map((x,i)=>{
+    return (x == i+1)?result=i+2:result = i;
+  });
+  // console.log(lengths, result, solve, fill);
+  return result;
+}
+
 // Do NOT touch or write anything below this line
 module.exports = {
   average,
