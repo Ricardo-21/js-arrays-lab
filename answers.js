@@ -50,8 +50,17 @@ function makeTitle(str) {
 }
 
 // Question 6
-function gimme() {
+function gimme(arr) {
   // Write your code here
+  let max = arr[0];
+  let min = arr[2];
+  let adjust = arr.map( x=> {
+    max = x>max? x:max;
+    min = x<min? x:min;
+  });
+  let result;
+  let loop = arr.map(x=>(x==max || x==min)?"":result =x);
+  return result;
 }
 
 // Do NOT touch or write anything below this line
